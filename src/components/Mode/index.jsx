@@ -4,8 +4,7 @@ function Mode() {
   return (
     <>
       <span className={style.mode}>
-        <i class="fa-solid fa-moon"></i>
-        <i class="fa-regular fa-sun"></i> Dark
+        <i class="fa-solid fa-moon"></i>Dark
       </span>
     </>
   );
