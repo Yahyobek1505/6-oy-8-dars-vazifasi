@@ -1,20 +1,25 @@
-import React from 'react'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 import img from "../../assets/Group 1.png"
 import emoji from "../../assets/Emoji.png"
 import style from "./index.module.css";
+
 function Hero() {
+  const { t, i18n } = useTranslation();
   return (
     <div className={style.mainSection}>
   <div className={style.title}>
-  <h2>Hi <span className={style.emoji}><img src={emoji} alt="" /></span></h2>
-<h2>I'm Charles,</h2>
-<h2>Front-end Developer</h2>
+  <h2>{t("Heading")}<span className={style.emoji}><img src={emoji} alt="" /></span></h2>
+<h2>{t("Title")}</h2>
+<h2>{t("Job")}</h2>
 <div className={style.desc}>
-     <p>I design and develop experiences that make people's lives simpler through Web and Mobile apps. I work with FIgma , HTML5, CSS3, JavaScript, React, ReactNative and Flutter.</p>
+     <p>{t("Paragraph")}</p>
      </div>
      <div className={style.links}>
-      <button className={style.hireMe}>HERE ME</button>
-      <button className={style.projects}>SEE MY PROJECTS</button>
+      <button className={style.hireMe}>{t("Hire")}</button>
+      <button className={style.projects}>{t("See")}</button>
      </div>
   </div>
      <div className={style.heroImg}>

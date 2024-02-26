@@ -3,3 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --background-color: #fff;
+  --text-color: #333;
+}
+
+body.dark-theme {
+  --background-color: #333;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
