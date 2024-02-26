@@ -3,7 +3,7 @@ import style from "./index.module.css";
 function Mode() {
   return (
     <>
-      <span className={style.mode}>
+      <span className={style.mode} onClick={handleCLick} >
         <i class="fa-solid fa-moon"></i>Dark
       </span>
     </>

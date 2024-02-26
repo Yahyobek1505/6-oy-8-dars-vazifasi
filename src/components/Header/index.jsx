@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./index.module.css";
 import Mode from "../Mode";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import LanguageSelect from "../../../language.jsx";
 import "../../i18n";
 function Header() {
@@ -18,7 +18,7 @@ function Header() {
           <a href="#">{t("Contact")}</a>
         </li>
         <li>
-          <a href="#">{t("Projects")}</a>
+          <a href="#">{t("Project")}</a>
         </li>
         <li>
           <a href="#">{t("Skills")}</a>
